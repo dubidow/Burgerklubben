@@ -1,0 +1,515 @@
+﻿/*#region GENERAL STUFF*/
+
+body {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    background-image: url('../images/Burgerbackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.content {
+    padding-bottom: 5%;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    padding-top: 2%;
+    font-weight: bold;
+}
+/*#endregion*/
+/*#region NAVBAR*/
+
+.navbar-brand:hover {
+    color: #a6470e;
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-size: 4vh;
+}
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+        color: #a6470e;
+        transition: 0.3s;
+        transform: scale(1.2);
+    }
+
+    .navbar-dark .navbar-nav .nav-link svg:hover {
+        fill: #a6470e;
+        transition: 0.3s;
+        transform: scale(1.2);
+    }
+
+
+.navbar-dark .navbar-toggler {
+    color: white;
+}
+
+    .navbar-dark .navbar-toggler:hover {
+        color: #a6470e;
+        transition: 0.3s;
+        transform: scale(1.2);
+    }
+/*#endregion*/
+
+/*#region FOOTER*/
+.footer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 2vw;
+    background: #949b6a;
+    display: block;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-info {
+    justify-content: center;
+}
+.footer img:hover {
+    transition: 0.3s;
+    transform: scale(1.4);
+}
+
+/*#endregion*/
+
+/*#region FRONTPAGE*/
+.frontpageheadline {
+    color: white;
+    text-shadow: 3px 3px 1px black;
+    font-size: 7vh;
+    letter-spacing: 5px;
+    margin-bottom: 10%;
+}
+
+.hapserburger {
+    border-radius: 3%;
+}
+
+.vignette {
+    box-shadow: inset 0 0 100px rgba(0,0,0,5);
+    line-height: 0;
+    display: inline-block;
+    border-radius: 3%;
+}
+
+    .vignette img {
+        position: relative;
+        z-index: -1;
+    }
+
+.hapserburgernewoffer {
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: 4vh;
+    color: white;
+    text-shadow: 3px 3px 1px black;
+}
+
+.hapserburgernewofferprice {
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: 5vh;
+    color: red;
+    text-shadow: 3px 3px 1px black;
+}
+
+.youtubevids {
+    margin-top: 15%;
+    background-color: rgba(102,102,102,0.4);
+    border: 2px solid #A6470e;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 0%;
+    margin-bottom: 5%;
+}
+
+.goodbye {
+    margin-bottom: 5%;
+    font-weight: bold;
+    font-size: 4vh;
+    color: white;
+    text-shadow: 3px 3px 1px black;
+}
+
+/*#endregion*/
+/*#region ADMIN CRUD PAGE*/
+.UserInfo-Logout {
+    align-items: center;
+    font-size: 3.5vh;
+    text-shadow: 4px 4px 4px black;
+}
+
+.selectSP {
+    background-color: rgba(102,102,102,0.4);
+    padding: 5% 2%;
+    align-items: center;
+    border-radius: 5%;
+    border: 2px solid #A6470e;
+}
+
+.setProduct {
+    background-color: rgba(102,102,102,0.4);
+    padding: 5% 2%;
+    border-radius: 5%;
+    border: 2px solid #A6470e;
+}
+
+.selectspselector {
+    background-color: rgba(102,102,102,0.5);
+    color: white;
+    text-shadow: 4px 4px 4px black;
+}
+
+.container-admin {
+    color: #a6470e;
+    text-align: center;
+    font-size: 3.5vh;
+    text-shadow: 4px 4px 4px RGB(255, 255, 255);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.admincrud-headline {
+    color: white;
+    text-shadow: 3px 3px 1px black;
+    font-size: 7vh;
+    letter-spacing: 5px;
+    margin-bottom: 4%;
+}
+
+.adminh2 {
+    color: white;
+    text-shadow: 3px 3px 1px black;
+    font-size: 3.5vh;
+    font-weight: bold;
+}
+
+#btnPickSP {
+    padding-top: 10%;
+    padding-left: 35%;
+    padding-right: 35%;
+    padding-bottom: 10%;
+    border-radius: 5%;
+    background-color: #A6470e;
+    border: 0px;
+    color: white;
+    text-shadow: 3px 3px 1px black;
+}
+
+#btnExecuteSP {
+    padding-top: 3%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 3%;
+    border-radius: 5%;
+    background-color: #A6470e;
+    border: 0px;
+    color: white;
+    text-shadow: 3px 3px 1px black;
+}
+
+#btnSetProduct {
+    padding-top: 3%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 3%;
+    border-radius: 5%;
+    background-color: #A6470e;
+    border: 0px;
+    color: white;
+    text-shadow: 3px 3px 1px black;
+}
+
+#lblTryCatchSP {
+    color: white;
+    text-shadow: 3px 3px 1px black;
+}
+
+#lblTryCatchSet {
+    color: white;
+    text-shadow: 3px 3px 1px black;
+}
+
+#btnLogout {
+    padding-top: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 1%;
+    border-radius: 5%;
+    background-color: #A6470e;
+    border: 0px;
+    color: white;
+    text-shadow: 3px 3px 1px black;
+    margin-left: 2%;
+}
+
+.setproductlbl {
+    color: white;
+    text-shadow: 3px 3px 1px black;
+}
+
+.setsplbl {
+    color: white;
+    text-shadow: 3px 3px 1px black;
+}
+
+.setproducttxt {
+    background-color: rgba(102,102,102,0.4);
+    border: 2px solid #A6470e;
+    color: white;
+    text-shadow: 3px 3px 1px black;
+}
+
+.setsptxt {
+    background-color: rgba(102,102,102,0.4);
+    border: 2px solid #A6470e;
+    color: white;
+    text-shadow: 3px 3px 1px black;
+}
+
+/*#endregion*/
+/*#region MENU PAGE*/
+
+table.burgergrid td:nth-child(5):hover {
+    transition: 0.3s;
+    transform: scale(2.0);
+}
+
+table.burgergrid {
+    background-color: rgba(102,102,102,0.4);
+    border: 2px solid #A6470e;
+    font-size: 3vh;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 3%;
+    text-shadow: 3px 3px 1px black;
+}
+
+.menucardh1 {
+    color: white;
+    text-shadow: 3px 3px 1px black;
+    font-size: 7vh;
+    letter-spacing: 5px;
+}
+
+table.beveragesgrid {
+    background-color: rgba(102,102,102,0.4);
+    border: 2px solid #A6470e;
+    font-size: 3vh;
+    margin-top: 0%;
+    text-shadow: 3px 3px 1px black;
+}
+
+.container-menu {
+    color: #a6470e;
+    text-align: center;
+    font-size: 3.5vh;
+    text-shadow: 3px 3px 1px black;
+}
+
+#txtSearch {
+    background-color: rgba(102,102,102,0.4);
+    border: 2px solid #A6470e;
+    color: white;
+    text-shadow: 3px 3px 1px black;
+}
+
+#btnSearch {
+    padding-top: 10%;
+    padding-left: 35%;
+    padding-right: 35%;
+    padding-bottom: 10%;
+    margin-left: 25%;
+    border-radius: 25%;
+    background-color: #A6470e;
+    border: 0px;
+    color: white;
+    text-shadow: 3px 3px 1px black;
+}
+
+#lblSearchResult {
+    border-inline-color: rgba(102,102,102,0.4);
+    font-size: 3.5vh;
+}
+
+.menufield h2 {
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: 4vh;
+    color: white;
+    text-shadow: 3px 3px 1px black;
+}
+
+.searchboxcolor {
+    background-color: rgba(102,102,102,0.4);
+    border: 2px solid #A6470e;
+    margin-top: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.menufield > * {
+    color: white;
+}
+
+.searchmenu {
+    justify-items: center;
+}
+
+.easteregg {
+  
+}
+    .easteregg img {
+        border-radius: 50%;
+        border: 2px solid #A6470e;
+        transition: transform 1s;
+    }
+        .easteregg img:hover {
+            border-radius: 50%;
+            border: 2px solid #A6470e;
+            transform: rotate(360deg);
+            
+        }
+
+/*#endregion*/
+
+/*#region INFO PAGE*/
+.info-data {
+    justify-content: center;
+}
+
+.Socialmedia {
+    margin-top: 2%;
+    letter-spacing: 4vw;
+}
+
+    .Socialmedia img:hover {
+        transition: 0.3s;
+        transform: scale(1.4);
+    }
+
+.infoheadline {
+    color: white;
+    text-shadow: 3px 3px 1px black;
+    font-size: 7vh;
+}
+
+.container-info {
+    color: white;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    font-size: 3.5vh;
+    text-shadow: 3px 3px 1px black;
+    background-color: rgba(102,102,102,0.4);
+    border: 2px solid #A6470e;
+}
+/*#endregion*/
+
+/*#region LOGIN PAGE*/
+.Login-Button {
+    margin-top: 5%;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    border-radius: 15%;
+    background-color: #A6470e;
+    border: 0px;
+    color: white;
+    text-shadow: 3px 3px 1px black;
+}
+
+.loginheadline {
+    color: white;
+    text-shadow: 3px 3px 1px black;
+    font-size: 7vh;
+}
+
+.container-login {
+    color: white;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 4%;
+    padding-top: 3%;
+    padding-bottom: 6%;
+    font-size: 3.5vh;
+    text-shadow: 3px 3px 1px black;
+    background-color: rgba(102,102,102,0.4);
+    border: 2px solid #A6470e;
+}
+
+.loginlbl {
+    color: white;
+    text-shadow: 3px 3px 1px black;
+}
+
+.logintxt {
+    background-color: rgba(102,102,102,0.4);
+    border: 2px solid #A6470e;
+    color: white;
+    text-shadow: 3px 3px 1px black;
+}
+/*#endregion*/
+/*#region CHECKOUT PAGE*/
+.checkoutheadline {
+    color: white;
+    text-shadow: 3px 3px 1px black;
+    font-size: 7vh;
+}
+/*#endregion*/
+/*#region ORDER PAGE*/
+.orderheadline {
+    color: white;
+    text-shadow: 3px 3px 1px black;
+    font-size: 7vh;
+}
+
+.container-order {
+    color: white;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 3.5vh;
+    font-weight: bold;
+    text-shadow: 3px 3px 1px black;
+    background-color: rgba(102,102,102,0.4);
+    border: 2px solid #A6470e;
+}
+/*#endregion*/
+
+
+
+
+
+
+
